@@ -8,7 +8,7 @@ import numpy as np
 from tqdm import tqdm
 
 # Read CSV
-df = pd.read_csv("dataset/list_attr_celeba.csv")
+df = pd.read_csv("/content/Capstone81/dataset/archive/list_attr_celeba.csv")
 # df = df.head(21)
 
 # Numpy array of dataframe column names
@@ -538,4 +538,4 @@ for i in tqdm(df.index):
     new_dict["text_description"].append(description.strip())
 
 # Saving into csv
-pd.DataFrame(data=new_dict).to_csv("dataset/text_shuffle_descr_celeba.csv", index=False)
+pd.DataFrame(data=new_dict).to_csv("/content/Capstone81/dataset/archive/img_align_celeba/text_shuffle_descr_celeba.csv", index=False)
