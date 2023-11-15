@@ -581,13 +581,13 @@ def generate_one_to_N_caption(df, N=5, dataset_size=10_000):
 
     # Saving into csv
     pd.DataFrame(data=new_dict).to_csv(
-        f"dataset/text_{N}_descr_celeba.csv", index=False
+        f"/content/Capstone81/dataset/archive/img_align_celeba/text_{N}_descr_celeba.csv", index=False
     )
 
 
 if __name__ == "__main__":
     # Read CSV
-    df = pd.read_csv("dataset/list_attr_celeba.csv")
+    df = pd.read_csv("/content/Capstone81/dataset/archive/list_attr_celeba.csv")
 
     # Numpy array of dataframe column names
     cols = np.array(df.columns)
